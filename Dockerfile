@@ -9,5 +9,5 @@ RUN curl "https://swift.org/builds/swift-3.0.1-preview-1/ubuntu1604/swift-3.0.1-
 RUN tar -xvf swift.tar.gz --strip 1
 RUN rm swift.tar.gz
 WORKDIR /
-ENV PATH=$PATH:/swift/bin
+ENV PATH=$PATH:/swift/usr/bin
 
