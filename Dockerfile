@@ -7,7 +7,7 @@ RUN mkdir swift
 WORKDIR swift
 RUN curl "https://swift.org/builds/swift-3.0.1-preview-1/ubuntu1604/swift-3.0.1-PREVIEW-1/swift-3.0.1-PREVIEW-1-ubuntu16.04.tar.gz" > swift.tar.gz
 RUN tar -xvf swift.tar.gz --strip 1
-RUN cd && echo 'export PATH="$PATH:~/swift/bin"' >> .profile
 RUN rm swift.tar.gz
 WORKDIR /
+ENV PATH=$PATH:/swift/bin
 
